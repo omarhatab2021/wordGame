@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- start IE combability meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- start viewport mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- start a  title of project-->
+    <title>to do list</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- start FontAwosome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- start bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- start normalization -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- start css source -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- start script -->
+    <script></script>
+    <!-- end script -->
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="splash-screen"> <span>GAME - OVER </span> <button class="btn btn-danger my-4" style="padding: 15px 30px; font-size: 30px;" id = "again">Again</button></div>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name">Hangman</div>
+        <div class="catogaries">
+          word from : <span></span>
+        </div>
+      </div>
+      <hr>
+      <!-- start row -->
+      <div class="row">
+        <!-- start col -->
+        <div class="col-6">
+          <div class="hangman-draw">
+            <div class="the-draw">
+              <div class="the-stand"></div>
+              <div class="the-hang"></div>
+              <div class="the-rope"></div>
+              <div class="the-man">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="hands"></div>
+                <div class="legs"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- end col -->
+        <!-- start col -->
+        <div class="col-6">
+          <div class="letters"></div>
+        </div>
+        <hr>
+        <!-- end col -->
+        <!-- start col -->
+        <div class = "col-12">
+          <div class="letters-guess"></div>
+        </div>
+        <!-- end col -->
+      </div>
+      <hr>
+      <!-- end row -->
+    </div>
+
+    <!-- sounds -->
+    <audio src="/WhatsApp Audio 2021-08-28 at 12.52.43.mpeg" id = "success" preload="auto"></audio>
+    <audio src="/failed.mpeg" id = "failed" preload="auto"></audio>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/myJava.js"></script>
+  </body>
+</html>
